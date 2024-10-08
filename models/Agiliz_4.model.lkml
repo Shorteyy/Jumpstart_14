@@ -3,12 +3,12 @@ connection: "retail_bigquery"
 # include all the views
 include: "/views/**/*.view.lkml"
 
-datagroup: jumpstart_14_default_datagroup {
+datagroup: agiliz4_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
   max_cache_age: "1 hour"
 }
 
-persist_with: jumpstart_14_default_datagroup
+persist_with: agiliz4_default_datagroup
 
 explore: inventory_items {
   join: products {
