@@ -56,8 +56,6 @@ explore: order_items {
   }
 }
 
-explore: distribution_centers {}
-
 explore: users {}
 
 explore: events {
